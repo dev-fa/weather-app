@@ -6,9 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Welcome</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="main.js" defer></script>
 </head>
 <body>
     
+    <div class="container">
+
+        <div class="search">
+            <input
+                type="text"
+                id="search-bar"
+                placeholder="Search City..."
+                minlength=1
+                maxlength=30
+                required
+            >
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="weather-container">
+            <div class="weather-header">
+                <span class="location">
+                    <h1 class="city-name">Somewhere</h1>
+                    <span class="country">Int</span>
+                </span>
+                <h2 class="weather-desc">Chance of Meatballs</h2>
+            </div>
+            <div class="weather-body">
+                <div class="body-item">
+                    <span class="material-symbols-outlined">
+                        device_thermostat
+                    </span>
+                    <span class="body-text">Temp:</span>
+                    <span class="temp"></span>
+                </div>
+                <div class="body-item">
+                    <span class="material-symbols-outlined">
+                        thermometer
+                    </span>
+                    <span class="body-text">Feels Like:</span>
+                    <span class="feels-like"></span>
+                </div>
+                <div class="body-item">
+                    <span class="material-symbols-outlined">
+                        humidity_percentage
+                    </span>
+                    <span class="body-text">Humidity:</span>
+                    <span class="humidity"></span>
+                </div>
+                <div class="body-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <span class="body-text">Wind Speed:</span>
+                    <span class="wind-speed"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
